@@ -1,3 +1,5 @@
+//practica metodología 
+
 #include <stdio.h>
 #include <stdlib.h>
 
