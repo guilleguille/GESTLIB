@@ -48,17 +48,7 @@
 
       }
       
-int main(int argc, char *argv[])
-{
-    system("cls");
-    printf("Bienvenido a GESTBIB.. Pulse <Intro> para continuar\n"); 
-    system("PAUSE>NULL");
-    
-    mostrarMenu();
-    
-    system("PAUSE>NULL");
-    return 0;
-}
+
 
 
 int mostrarMenu(){
@@ -184,4 +174,17 @@ int elegirOpcion(int a){
     break;
     
 }
+}
+
+
+int main(int argc, char *argv[])
+{
+    system("cls");
+    printf("Bienvenido a GESTBIB.. Pulse <Intro> para continuar\n"); 
+    system("PAUSE>NULL");
+    
+    mostrarMenu();
+    
+    system("PAUSE>NULL");
+    return 0;
 }
