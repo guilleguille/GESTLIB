@@ -13,6 +13,7 @@ typedef struct{
 typedef struct{
 	
 	char titulo[25], autor[30], nomRevista[12];
+	int numRevista, pagRevista;
 	
 } tRegArticulo;
 
