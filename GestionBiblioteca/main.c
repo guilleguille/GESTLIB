@@ -1,7 +1,9 @@
-//practica metodología 
+//practica metodologï¿½a 
 
 #include <stdio.h>
 #include <stdlib.h>
+
+//Comentario
 
 
 
@@ -28,7 +30,7 @@
     printf("%c                                                                      %c\n",186,186);
     printf("%c     6.-Ordenar ejemplar (por clave)                                  %c\n",186,186);
     printf("%c                                                                      %c\n",186,186);
-    printf("%c     7.-Ordenar ejemplares ascendentemente(por año de publicacion)    %c\n",186,186);
+    printf("%c     7.-Ordenar ejemplares ascendentemente(por aÃ±o de publicacion)    %c\n",186,186);
     printf("%c                                                                      %c\n",186,186);
     printf("%c     8.-Ordenar ejemplares descendentemente(por autor)                %c\n",186,186);
     printf("%c                                                                      %c\n",186,186);
