@@ -28,7 +28,7 @@
     printf("%c                                                                      %c\n",186,186);
     printf("%c     6.-Ordenar ejemplar (por clave)                                  %c\n",186,186);
     printf("%c                                                                      %c\n",186,186);
-    printf("%c     7.-Ordenar ejemplares ascendentemente(por año de publicacion)    %c\n",186,186);
+    printf("%c     7.-Ordenar ejemplares ascendentemente(por aÃ±o de publicacion)    %c\n",186,186);
     printf("%c                                                                      %c\n",186,186);
     printf("%c     8.-Ordenar ejemplares descendentemente(por autor)                %c\n",186,186);
     printf("%c                                                                      %c\n",186,186);
@@ -50,17 +50,7 @@
 
       }
       
-int main(int argc, char *argv[])
-{
-    system("cls");
-    printf("Bienvenido a GESTBIB.. Pulse <Intro> para continuar\n"); 
-    system("PAUSE>NULL");
-    
-    mostrarMenu();
-    
-    system("PAUSE>NULL");
-    return 0;
-}
+
 
 
 int mostrarMenu(){
@@ -186,4 +176,16 @@ int elegirOpcion(int a){
     break;
     
 }
+}
+
+int main(int argc, char *argv[])
+{
+    system("cls");
+    printf("Bienvenido a GESTBIB.. Pulse <Intro> para continuar\n"); 
+    system("PAUSE>NULL");
+    
+    mostrarMenu();
+    
+    system("PAUSE>NULL");
+    return 0;
 }
