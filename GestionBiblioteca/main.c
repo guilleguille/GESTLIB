@@ -5,78 +5,7 @@
 
 
 
-int main(int argc, char *argv[])
-{
-    system("cls");
-    printf("Bienvenido a GESTBIB.. Pulse <Intro> para continuar\n"); 
-    system("PAUSE>NULL");
-    
-    elegirOpcion(mostrarMenu());
-    
-    system("PAUSE>NULL");
-    return 0;
-}
-
-
-int mostrarMenu(){
-    
-    int opcion;
-    int i;
-    
-    system("cls");
-    
-    
-    printf("%c",201);
-    for(i = 0;i < 26;i++) printf("%c",205);
-    printf("%c \n",187);
-    
-    printf("%c                          %c\n",186,186);
-    printf("%c     1.-Mantenimiento     %c\n",186,186);
-    printf("%c                          %c\n",186,186);
-    printf("%c     2.-Informes          %c\n",186,186);
-    printf("%c                          %c\n",186,186);
-    printf("%c     3.-Importar datos    %c\n",186,186);
-    printf("%c                          %c\n",186,186);
-    printf("%c     0.-Salir             %c\n",186,186);
-    printf("%c                          %c\n",186,186);
-    
-    printf("%c",200);
-    for(i = 0;i < 26;i++) printf("%c",205);
-    printf("%c \n",188);
-    
-    scanf("%i",&opcion);
-    
-    return opcion;
-}
-
-int elegirOpcion(int a){
-    
-    switch(a){
-    case 1:
-         menuMantenimiento();
-         //elegirOpcion(mostrarMenu());
-    break;
-    case 2 :
-         printf("Adios"); 
-        // elegirOpcion(mostrarMenu()); 
-    break;
-    case 3 :
-         printf("Adios");
-         //elegirOpcion(mostrarMenu());  
-    break;
-    case 0 :
-         exit(0);
-    break;
-    default:
-            printf("La opcion elegida no es valida");
-            system("PAUSE>NULL");
-            elegirOpcion(mostrarMenu());
-    break;
-    
-}
-    }
-
- int menuMantenimiento(){
+ void menuMantenimiento(){
     
     system("cls");
     
@@ -117,15 +46,85 @@ int elegirOpcion(int a){
     
     scanf("%i",&a);
     
-    
+    OpcionMenuMantenimiento(a);
 
-    
-    system("pause>NULL");
-    return 0;
       }
       
- int OpcionMenuMantenimiento(){
-         switch(a){
+int main(int argc, char *argv[])
+{
+    system("cls");
+    printf("Bienvenido a GESTBIB.. Pulse <Intro> para continuar\n"); 
+    system("PAUSE>NULL");
+    
+    mostrarMenu();
+    
+    system("PAUSE>NULL");
+    return 0;
+}
+
+
+int mostrarMenu(){
+    
+    int opcion;
+    int i;
+    
+    system("cls");
+    
+    
+    printf("%c",201);
+    for(i = 0;i < 26;i++) printf("%c",205);
+    printf("%c \n",187);
+    
+    printf("%c                          %c\n",186,186);
+    printf("%c     1.-Mantenimiento     %c\n",186,186);
+    printf("%c                          %c\n",186,186);
+    printf("%c     2.-Informes          %c\n",186,186);
+    printf("%c                          %c\n",186,186);
+    printf("%c     3.-Importar datos    %c\n",186,186);
+    printf("%c                          %c\n",186,186);
+    printf("%c     0.-Salir             %c\n",186,186);
+    printf("%c                          %c\n",186,186);
+    
+    printf("%c",200);
+    for(i = 0;i < 26;i++) printf("%c",205);
+    printf("%c \n",188);
+    
+    scanf("%i",&opcion);
+    
+    elegirOpcion(opcion);
+}
+
+int elegirOpcion(int a){
+    
+    switch(a){
+    case 1:
+         menuMantenimiento();
+         //elegirOpcion(mostrarMenu());
+    break;
+    case 2 :
+         printf("Adios"); 
+        // elegirOpcion(mostrarMenu()); 
+    break;
+    case 3 :
+         printf("Adios");
+         //elegirOpcion(mostrarMenu());  
+    break;
+    case 0 :
+         exit(0);
+    break;
+    default:
+            printf("La opcion elegida no es valida");
+            system("PAUSE>NULL");
+            elegirOpcion(mostrarMenu());
+    break;
+    
+}
+    }
+
+      
+ int OpcionMenuMantenimiento(int a){
+     
+  switch(a){
               
     case 1:
          printf("caso1\n");
@@ -173,12 +172,12 @@ int elegirOpcion(int a){
     break; 
 
     case 10 :
-         printf("caso10\n");
+        printf("caso10\n");;
           
     break;
       
     case 0 :
-         exit(0);
+         mostrarMenu();
     break;
     default:
             printf("La opcion elegida no es valida");
